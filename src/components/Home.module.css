@@ -1,0 +1,9 @@
+.settings {
+  display: flex;
+  justify-content: space-evenly;
+}
+.setting {
+  padding: 1em;
+  color: var(--celadon-blue); 
+  text-decoration: underline;
+}

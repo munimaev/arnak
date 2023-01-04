@@ -1,0 +1,31 @@
+.category {
+  width: 100%;
+  height: 100%;
+  transition-property: opacity, top;
+  transition-duration: 0.33s, 0.4s;
+  transition-timing-function: ease, linear;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: auto max-content;
+}
+.category.active {
+  opacity: 1;
+  z-index: 2;
+  top: 0;
+}
+
+.category .title {
+  transition-property: top;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+  top: -60%;
+}
+.category.active .title {
+  top: 0%;
+}
+
+.players {
+  padding: 1.4em;
+  height: 100%;
+  /* padding-top: 11em; */
+}

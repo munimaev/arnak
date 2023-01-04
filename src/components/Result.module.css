@@ -1,0 +1,13 @@
+
+
+.calculate {
+  padding: 1em 0.3em 0.2em;
+  color: var(--celadon-blue); 
+  text-decoration: underline;
+    
+}
+.reset {
+  padding: 1em 0.3em 0.5em;
+  color: var(--celadon-blue); 
+  text-decoration: underline;
+}

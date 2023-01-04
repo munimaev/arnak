@@ -1,0 +1,85 @@
+
+.title {
+  /* height: 150px; */
+  background-image: url(../assets/images/main.png);
+  background-size: cover;
+  /* border-radius: 0 0 1.4em 1.4em; */
+  /* position: relative; */
+  border-bottom: 1px solid var(--dark-liver-horses);
+  box-shadow: 0px 5px 5px 0px rgb(50 40 15 / 20%);
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  position: relative;
+}
+
+.title-mag {
+  background-image: url("../assets/images/mag.png");
+  background-position: 50% 45%;
+  background-size: 115%;
+}
+.title-book {
+  background-image: url("../assets/images/book.png");
+  background-position: 45%;
+}
+.title-tablet {
+  background-image: url("../assets/images/tablet.png");
+  background-position: 50% 25%;
+}
+.title-idol {
+  background-image: url("../assets/images/idol.png");
+   background-position: 45%;
+}
+.title-guardian {
+  background-image: url("../assets/images/guardian.png");
+  background-position: 75%;
+}
+.title-item {
+  background-image: url("../assets/images/item.png");
+  background-position: 50%;
+}
+.title-artifact {
+  background-image: url("../assets/images/artifact.png");
+  background-position: 50%;
+}
+.title-fear {
+  background-image: url("../assets/images/fear.png");
+  background-position: 50%;
+}
+.title-trophy {
+  background-image: url("../assets/images/trophy.png");
+  background-position: 50%;
+}
+
+.title_name_wrapper {
+  position:absolute;
+  font-size: 1.2em;
+  height: 2em;
+  bottom: -1.15em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.title_name {
+  text-align: center;
+  background-color: var(--dark-liver-horses);
+  background: linear-gradient(180deg, rgba(249,228,217,1) 0%, rgba(243,189,160,1) 5%, rgba(74,59,48,1) 7%, rgba(74,59,48,1) 93%, rgba(206,121,103,1) 95%);
+  color: #fcc46b;
+  line-height: 2em;
+  padding: 0 1em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(50, 40, 15, 0.2);
+}
+
+.title-home {
+  font-size: 2em;
+}
+.title-home .title_name_wrapper{
+  bottom: -0.57em;
+}
+
+.title_icon {
+  margin-right: 0.3em;
+  font-size: 0.9em;
+}

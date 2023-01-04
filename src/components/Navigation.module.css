@@ -1,0 +1,66 @@
+
+.nav {
+  grid-area: nav;
+  background-color: #f6f5f2;
+  box-shadow: 0 -0.4em 0.4em 0 rgba(50, 40, 15, 0.1);
+  border-top: 1px solid #f9f8f6;
+  z-index: 4;
+}
+.nav ul {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  height: 100%;
+}
+.nav ul li {
+  text-align: center;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 2.5em;
+  justify-self: center;
+  align-self: center;
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.active {
+  background-color: #fefefd;
+  box-shadow: 0.4em 0.4em 0.4em 0 rgba(50, 40, 15, 0.1);
+}
+
+.scoring {
+  transition-duration: 5s;
+}
+.scoring span {
+  transition-property: all;
+  transition-duration: 0.33s;
+  transition-timing-function: ease;
+  color: #fefefd
+}
+
+.book.scoring {
+  background-color: var(--blue-sapphire) ;
+}
+.mag.scoring {
+  background-color: var(--viridian-green) ;
+}
+.tablet.scoring {
+  background-color: var(--middle-blue-green) ;
+}
+.idol.scoring {
+  background-color: var(--gamboge) ;
+}
+.guardian.scoring {
+  background-color: var(--alloy-orange) ;
+}
+.item.scoring {
+  background-color: var(--rufous) ;
+}
+.artifact.scoring {
+  background-color: var(--ruby-red) ;
+}
+.fear.scoring {
+  background-color: var(--score-dark) ;
+}

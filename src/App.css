@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+
+/* Main */
+
+:root {
+  --rich-black-fogra-29: hsla(197, 100%, 5%, 1);
+  --blue-sapphire: hsla(190, 100%, 23%, 1);
+  --viridian-green: hsla(181, 88%, 31%, 1);
+  --middle-blue-green: hsla(160, 41%, 70%, 1);
+  --medium-champagne: hsla(45, 60%, 78%, 1);
+  --gamboge: hsla(39, 100%, 47%, 1);
+  --alloy-orange: hsla(30, 98%, 40%, 1);
+  --rust: hsla(19, 97%, 37%, 1);
+  --rufous: hsla(5, 81%, 38%, 1);
+  --ruby-red: hsla(358, 64%, 37%, 1);
+
+  --baby-blue: hsla(197, 88%, 69%, 1);
+  --dark-liver-horses: hsla(16, 22%, 24%, 1);
+  --yellow-orange: hsla(35, 98%, 68%, 1);
+  --green-crayola: hsla(158, 89%, 37%, 1);
+  --celadon-blue: hsla(201, 64%, 33%, 1);
+
+  --score: hsla(296, 58%, 33%, 1);
+  --score-light: hsla(302, 31%, 48%, 1);
+  --score-lighter: hsla(326, 52%, 75%, 1);
+  --score-dark: hsla(289, 61%, 25%, 1);
+  --score-darker: hsla(279, 62%, 19%, 1);
+
+  --player-red: hsla(0, 64%, 33%, 1);
+  --player-yellow: hsla(54, 64%, 33%, 1);
+  --player-green: hsla(100, 64%, 33%, 1);
+  --player-blue: hsla(207, 77%, 33%, 1);
+
+  --text-main: hsla(33, 36%, 22%, 1);
+  --text-label: hsla(40, 16%, 55%, 1);
+  --text-title: hsla(40, 16%, 55%, 1);
+  }
+
+  @font-face {
+    font-family: "Cuprum";
+    font-weight: 400;
+    font-style: normal;
+    src: url(./assets/Cuprum/static/Cuprum-Regular.ttf) format("opentype");
+  }
+  
+  html body * {
+    font-family: "Cuprum";
+    font-weight: 400;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--text-main);
+  }
+  
+  a, a:active {
+    color: var(--celadon-blue); 
+  }
+
+  .main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 7em;
+    grid-template-areas:
+      "cat"
+      "nav";
+  }
+  .categoties {
+    position:relative;
+    grid-area: cat;
+    justify-self: stretch;
+    align-self: stretch;
+    background-color: #f6f5f2;
+
+  }

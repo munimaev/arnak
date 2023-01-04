@@ -1,0 +1,67 @@
+
+.change {
+  display: grid;
+  grid-template-columns: 3em auto 2.5em 2.5em;
+  grid-template-rows: 3em;
+  grid-template-areas: "player value reset action";
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.change_icon {
+  font-size: 2em;
+
+  grid-area: player;
+  align-self: center;
+  justify-self: start;
+}
+.change_red .change_name,
+.change_red .change_icon {
+  color: var(--player-red);
+}
+.change_yellow .change_icon,
+.change_yellow .change_name {
+  color: var(--player-yellow);
+}
+.change_green .change_icon,
+.change_green .change_name {
+  color: var(--player-green);
+}
+.change_blue .change_icon,
+.change_blue .change_name {
+  color: var(--player-blue);
+}
+.change_name {
+  align-self: center;
+  grid-row-start: value;
+    grid-column-start: value;
+    grid-row-end: reset;
+    grid-column-end: reset;
+    font-size: 1.5em;
+}
+.change_field {
+  grid-area: value;
+  align-self: center;
+}
+.change_close {
+  grid-area: reset;
+  align-self: center;
+  justify-self: end;
+  padding-right: 0.3em;
+  font-size: 1.2em;
+  color: var(--celadon-blue);
+}
+.change_edit {
+  grid-area: action;
+  align-self: center;
+  justify-self: end;
+  padding-right: 0.3em;
+  color: var(--celadon-blue);
+}
+.change_accept {
+  grid-area: action;
+  align-self: center;
+  justify-self: end;
+  padding-right: 0.3em;
+  font-size: 1.2em;
+  color: var(--celadon-blue);
+}
