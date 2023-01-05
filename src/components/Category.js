@@ -35,7 +35,7 @@ const pages = {
   idol: {
     icon: <i className="fa-solid fa-podcast title_icon"></i>,
     title: "Idols",
-    min: 9,
+    min: 0,
     max: 30,
     step: 1,
   },

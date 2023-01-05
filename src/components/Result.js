@@ -104,7 +104,7 @@ function Result({ names, totalPoints, setPoints, setScoring }) {
             [cat]: prev[cat] + 1,
           };
         });
-      }, 100);
+      }, 250);
       setTimer(newTimer);
     }
   };

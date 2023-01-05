@@ -4,10 +4,10 @@ import Category from "./components/Category";
 import React from "react";
 
 const pointsForCategoryDefault = {
-  red: 2,
-  green: 3,
-  yellow: 4,
-  blue: 5,
+  red: 0,
+  green: 0,
+  yellow: 0,
+  blue: 0,
 };
 
 const pointsDefault = {
