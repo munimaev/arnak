@@ -41,8 +41,8 @@ function ResultPlayer({ color, name, result, percent, progress }) {
         </div>
         <div className={`${styles.player_result}`}>
           {[
-            "mag",
             "book",
+            "mag",
             "tablet",
             "idol",
             "guardian",

@@ -30,7 +30,7 @@ function Score({name,  category, color, points, setPoints, settings }) {
               step={settings.step}
               value={points}
               onChange={(e) => {
-                setPoints({ category, color, value: e.target.value });
+                setPoints({ category, color, value: Number(e.target.value) });
               }}
               style={{"backgroundSize": `${(points- settings.min)/(settings.max - settings.min)*100}% 100%, 100% 100%`}}
             />

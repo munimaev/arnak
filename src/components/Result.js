@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./Result.module.css";
 import ResultPlayer from "./ResultPlayer";
 
-const getResRaw = (totalPoints, color) => {
-  return Object.keys(totalPoints).reduce(
+const getResRaw = (resRaw, color) => {
+  return Object.keys(resRaw).reduce(
     (prev, curr) => {
       const summ =
-        curr === "fear" ? prev.summ : prev.summ + totalPoints[curr][color];
-      return { ...prev, summ, [curr]: totalPoints[curr][color] };
+        curr === "fear" ? prev.summ : prev.summ + resRaw[curr][color];
+      return { ...prev, summ, [curr]: resRaw[curr][color] };
     },
     { summ: 0 }
   );
@@ -15,7 +15,7 @@ const getResRaw = (totalPoints, color) => {
 
 const getMaxs = (res, cat) => {
   const summs = [res.red[cat], res.yellow[cat], res.blue[cat], res.red[cat]];
-  summs.sort();
+  summs.sort((a, b) => a - b);
   return summs.pop();
 };
 
@@ -31,6 +31,7 @@ const defaultProgress = {
 };
 
 function Result({ names, totalPoints, setPoints, setScoring }) {
+
   const [resRaw] = React.useState({
     red: getResRaw(totalPoints, "red"),
     yellow: getResRaw(totalPoints, "yellow"),
@@ -38,7 +39,7 @@ function Result({ names, totalPoints, setPoints, setScoring }) {
     blue: getResRaw(totalPoints, "blue"),
   });
 
-  const maxs = {
+  const [maxs, setMaxs] =  React.useState({
     mag: getMaxs(resRaw, "mag"),
     book: getMaxs(resRaw, "book"),
     tablet: getMaxs(resRaw, "tablet"),
@@ -48,7 +49,21 @@ function Result({ names, totalPoints, setPoints, setScoring }) {
     artifact: getMaxs(resRaw, "artifact"),
     fear: getMaxs(resRaw, "fear"),
     summ: getMaxs(resRaw, "summ"),
-  };
+  });
+
+  React.useEffect(() => {
+    setMaxs({
+      mag: getMaxs(resRaw, "mag"),
+      book: getMaxs(resRaw, "book"),
+      tablet: getMaxs(resRaw, "tablet"),
+      idol: getMaxs(resRaw, "idol"),
+      guardian: getMaxs(resRaw, "guardian"),
+      item: getMaxs(resRaw, "item"),
+      artifact: getMaxs(resRaw, "artifact"),
+      fear: getMaxs(resRaw, "fear"),
+      summ: getMaxs(resRaw, "summ"),
+    })
+  }, [resRaw, totalPoints])
 
   const percent = Math.round((100 / maxs.summ) * 1000) / 1000;
 
@@ -89,7 +104,7 @@ function Result({ names, totalPoints, setPoints, setScoring }) {
             [cat]: prev[cat] + 1,
           };
         });
-      }, 250);
+      }, 100);
       setTimer(newTimer);
     }
   };
