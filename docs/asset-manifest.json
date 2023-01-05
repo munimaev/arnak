@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/arnak/static/css/main.0ee379fd.css",
+    "main.js": "/arnak/static/js/main.8224474d.js",
+    "static/js/787.4d741d6e.chunk.js": "/arnak/static/js/787.4d741d6e.chunk.js",
+    "static/media/tablet.png": "/arnak/static/media/tablet.53441134fd78d0a3608d.png",
+    "static/media/artifact.png": "/arnak/static/media/artifact.61ad49d7a9cebb6d8fe7.png",
+    "static/media/fear.png": "/arnak/static/media/fear.85b6258130eaf3592632.png",
+    "static/media/trophy.png": "/arnak/static/media/trophy.d7219bbdae7ce526d7ff.png",
+    "static/media/main.png": "/arnak/static/media/main.0aec06e55383afd6141e.png",
+    "static/media/book.png": "/arnak/static/media/book.16075b0a903427fbba65.png",
+    "static/media/guardian.png": "/arnak/static/media/guardian.4e4d416b25193c5ae799.png",
+    "static/media/idol.png": "/arnak/static/media/idol.700f7e82f1a7e327f32a.png",
+    "static/media/mag.png": "/arnak/static/media/mag.1b0171b19f43adcc779f.png",
+    "static/media/item.png": "/arnak/static/media/item.fe96ec5b73ac81c1cc45.png",
+    "static/media/Cuprum-Regular.ttf": "/arnak/static/media/Cuprum-Regular.236653f4b01fd9717ca5.ttf",
+    "index.html": "/arnak/index.html",
+    "main.0ee379fd.css.map": "/arnak/static/css/main.0ee379fd.css.map",
+    "main.8224474d.js.map": "/arnak/static/js/main.8224474d.js.map",
+    "787.4d741d6e.chunk.js.map": "/arnak/static/js/787.4d741d6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ee379fd.css",
+    "static/js/main.8224474d.js"
+  ]
+}
