@@ -14,12 +14,7 @@ const pointsDefault = {
   book: { ...pointsForCategoryDefault },
   mag: { ...pointsForCategoryDefault },
   tablet: { ...pointsForCategoryDefault },
-  idol: {
-    red: 9,
-    green: 9,
-    yellow: 9,
-    blue: 9,
-  },
+  idol: {...pointsForCategoryDefault},
   item: { ...pointsForCategoryDefault },
   guardian: { ...pointsForCategoryDefault },
   artifact: { ...pointsForCategoryDefault },
